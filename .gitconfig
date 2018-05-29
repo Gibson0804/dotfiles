@@ -1,8 +1,3 @@
-[user]
-	name = 耿彪
-	email = gengbiao@yunniao.me
-[core]
-	excludesfile = /home/gengbiao/.gitignore
 [alias] 
     st = status
     ck = checkout
