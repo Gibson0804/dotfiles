@@ -1,0 +1,16 @@
+ln -s dotfiles/.vimrc .vimrc
+
+ln -s dotfiles/.vimrc.bundles .vimrc.bundles
+
+ln -s dotfiles/.bash_profile .bash_profile
+
+ln -s dotfiles/.gitconfig .gitconfig
+
+ln -s dotfiles/.tmux.conf .tmux.conf
+
+#tmux 安装
+yum install libevent-devel ncurses-devel  
+yum install tmux
+
+
+
