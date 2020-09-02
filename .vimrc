@@ -32,6 +32,13 @@ imap <leader>u   <ESC>ui
 
 nmap tt :tabnew 
 
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {}<ESC>i
+inoremap < <><ESC>i
+inoremap ' ''<ESC>i
+inoremap " ""<ESC>i
+
 set tags=tags
 set tags+=./tags,../tags,../../tags,../../../tags,../../../../tags,../../../../../tags
 
@@ -41,4 +48,11 @@ set mouse=a
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'itchyny/lightline.vim'
+Plug 'vim-scripts/AutoComplPop/'
+
+call plug#end()
 
